@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.attribution{
+     font-size: 11px; text-align: center;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+:root{
+
+    --primary--Dark-cyan: hsl(185, 75%, 39%);
+    --primary--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --primary--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --neutral--Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+   
+    overflow: hidden;
+}
+
+.wrapper{
+    width:100%;
+    height:100vh;
+    background-color: var(--primary--Dark-cyan); 
+   
+   
+    
+}
+.bg-image-top{
+    position: absolute;
+    transform: translate(-31%,-53%);
+
+    
+
+    
+}
+.bg-image-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform:translate(21%,64%)
+}
+
+.card-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.card{
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: white;
+}
+.card-bg-image img{
+    width:100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;  
+}
+
+.profile-picture img{
+    z-index: 1;
+    width: 100px;
+    height:100px;
+    position: relative;
+    margin-top: -55px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border:5px solid #fff;
+}
+.card-details{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.personal-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap:10px
+}
+.name{
+    font-weight: 700;
+}
+.age{
+    font-weight: 700;
+    color:var(--neutral--Dark-gray);
+}
+.place{
+    color:var(--neutral--Dark-gray);
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size:14px;
+
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    padding:25px;
+    text-align: center;
+}
+.stat-heading{
+    font-weight: 700;
+    font-size: 18px;
+}
+.stat-details
+{
+    margin-top: 4px;
+    color:var(--neutral--Dark-gray);
+    font-size: 12px;
+    font-weight:700;
+    
+}
+
+@media screen and (max-width:376px){
+    .bg-image-top{
+        transform: translate(-45%,-40%);
+        height:400px;
+        width: 400px;
+
+    }
+
+    .bg-image-bottom{
+        transform: translate(45%,40%);
+        height:400px;
+        width: 400px;
+    }
+    .card{
+        
+    }
+
+    .card-container{
+        width: 90%;
+    }
+
+}
